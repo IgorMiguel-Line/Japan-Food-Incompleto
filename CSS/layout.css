@@ -1,0 +1,37 @@
+@media (max-width: 1480px){
+    .container .img{
+        display: none;
+    }
+
+    .container .op_login{
+        width: 100%;
+        height: 100%;
+        padding: 200px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .op_login i{
+        font-size: 30px;
+    }
+
+    .container .mail .input{
+        flex-direction: column;
+    }
+    .body_login{
+        background-image: none;
+    }
+}
+
+@media (max-width: 500px){
+    .body_login{
+        background-image: url('../IMG/backgorund_Mobile.png');
+        background-size: cover;
+    }
+
+    .container .mail .input{
+        flex-direction: column;
+        padding: 130px 0 0 0;
+    }
+}

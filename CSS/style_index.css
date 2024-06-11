@@ -1,0 +1,98 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img img {
+    width: 80%;
+    padding: 35px 25px;
+    border-radius: 15%;
+}
+
+.op_login {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.op_login h1 {
+    color: #A17F53;
+    font-family: "Gwendolyn", cursive;
+    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.op_login h1 {
+    overflow: hidden;
+    /* Garante que o conteúdo seja ocultado */
+    border-right: 3px solid #9E4727;
+    /* O cursor piscante */
+    white-space: nowrap;
+    /* Mantém o conteúdo em uma única linha */
+    margin: 0 auto;
+    /* Centraliza o texto */
+    letter-spacing: 3px;
+    /* Espaçamento entre letras */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+
+.op_login a {
+    margin: 10px;
+    padding: 3% 25%;
+    background-color: #CBBFB0;
+    border-radius: 30px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.op_login a:hover {
+    margin-left: -5px;
+    border: 2px solid #9E4727;
+}
+
+.op_login button {
+    cursor: pointer;
+    color: #9E4727;
+    font-size: 20px;
+    font-family: 'Outfit', sans-serif;
+    background-color: #CBBFB0;
+}
+
+.op_login i {
+    font-size: 30px;
+    cursor: pointer;
+    color: #9E4727;
+    padding: 10px;
+    border-radius: 50%;
+}
